@@ -196,21 +196,20 @@
         </div>
     </div>
 
+    <script>
+        var profileMenu = document.getElementById('profile');
+        profileMenu.onclick = function (){
+            var menuList = document.getElementById('profileMenu');
+            menuList.classList.toggle('menu__show');
+        }
+
+        /*Left dropdown menu*/
+        var profileMenu = document.getElementById('dropdown');
+        profileMenu.onclick = function (){
+            var menuList = document.getElementById('dropdownMenu');
+            menuList.classList.toggle('menu__show');
+        }
+
+    </script>
   </body>
-<script>
-    var profileMenu = document.getElementById('profile');
-    profileMenu.onclick = function (){
-        var menuList = document.getElementById('profileMenu');
-        menuList.classList.toggle('menu__show');
-    }
-
-    /*Left dropdown menu*/
-    var profileMenu = document.getElementById('dropdown');
-    profileMenu.onclick = function (){
-        var menuList = document.getElementById('dropdownMenu');
-        menuList.classList.toggle('menu__show');
-    }
-
-    /*Icon rotated*/
-</script>
 </html>
