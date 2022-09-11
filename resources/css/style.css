@@ -131,11 +131,208 @@ header{
     font-size: 14px;
     line-height: 30px;
     color: #7D7D7E;
-    margin-left: 20px;
+    margin-left: 22px;
 }
 .each__menu--item:hover span{
     color: #ffffff;
 }
 .each__menu--item:hover svg path{
     fill: #FF7901;
+}
+.menu__item--active span{
+    color: #ffffff;
+}
+.menu__item--active svg path{
+    fill: #FF7901;
+}
+.each__menu--item:hover::after{
+    content: '';
+    display: inline-block;
+    height: 29px;
+    width: 3px;
+    background: #FF7901;
+    position: absolute;
+    right: 0;
+}
+.menu__item--active::after{
+    content: '';
+    display: inline-block;
+    height: 29px;
+    width: 3px;
+    background: #FF7901;
+    position: absolute;
+    right: 0;
+}
+.dropdown__menu svg:not(:first-child){
+    margin-left: 72px;
+}
+.dropdown__menu--items{
+    margin-left: 11px;
+}
+.dropdown__menu--item{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    margin-left: 42px;
+    margin-top: 30px;
+}
+.dropdown__menu--item span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: #7D7D7E;
+    margin-left: 13px;
+}
+.dropdown__menu--item:hover span{
+    color: #ffffff;
+}
+.dropdown__menu--item:hover svg path{
+    fill: #FF7901;
+}
+
+/*=======================================*/
+
+.profile__details--container{
+    padding: 120px 30px;
+    background-color: #FCFBFF;
+    height: 100%;
+    margin-left: 224px;
+}
+.details__card--container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile__card{
+    min-width: calc(21% - 15px);
+    height: 334px;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    margin-right: 15px;
+    text-align: center;
+}
+.credit__card{
+    min-width: calc(79% - 15px);
+    height: 334px;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    margin-left: 15px;
+    padding: 30px;
+    position: relative;
+}
+.credit__card h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #26262E;
+    position: absolute;
+    top: 70px;
+}
+.inner__card--container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.profile__card img{
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+}
+.profile__card--details{
+    margin-top: 15px;
+}
+.profile__card--details h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+    color: #26262E;
+}
+.profile__card--details p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #7D7D7E;
+    margin: 5px;
+}
+.credit__card--one{
+    margin-right: 15px;
+}
+.credit__card--two{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.credit__card--three{
+    margin-left: 15px;
+}
+.credit__card--one,
+.credit__card--two,
+.credit__card--three{
+    width: calc(33% - 16px);
+    height: 154px;background: #FFFFFF;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 10px;
+}
+.credit__card--two{
+    border: 1px solid #FF7901 !important;
+}
+.credit__card--one img,
+.credit__card--two img,
+.credit__card--three img{
+    float: right;
+}
+.credit__card--one h4,
+.credit__card--three h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #7D7D7E;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.credit__card--one p,
+.credit__card--three p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #BDBDBD;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.credit__card--two h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #26262E;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.credit__card--two p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #26262E;
+    margin-top: 30px;
+    margin-left: 20px;
 }
