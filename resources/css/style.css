@@ -240,7 +240,8 @@ header{
 }
 .credit__card{
     min-width: calc(79% - 15px);
-    height: 334px;
+    min-height: 334px;
+    height: 100%;
     background: #FFFFFF;
     border: 1px solid #F2F2F4;
     border-radius: 10px;
@@ -255,8 +256,7 @@ header{
     font-size: 24px;
     line-height: 30px;
     color: #26262E;
-    position: absolute;
-    top: 70px;
+    margin-top: 40px;
 }
 .inner__card--container{
     width: 100%;
@@ -307,8 +307,8 @@ header{
     background: #FFFFFF;
     border: 1px solid #F2F2F4;
     border-radius: 10px;
-    margin-top: 40px;
     padding: 10px;
+    margin-top: 10px;
 }
 .credit__card--two{
     border: 1px solid #FF7901 !important;
@@ -369,6 +369,7 @@ header{
     border: 1px solid #F2F2F4;
     border-radius: 10px;
     margin-top: 30px;
+    padding-bottom: 50px;
 }
 .update__nav--items{
     display: flex;
@@ -585,5 +586,105 @@ input:checked + .slider:before {
     }
     .notification__tab--container{
         padding-left: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .header__profile--details{
+        height: 50px;
+        justify-content: space-between;
+    }
+    .header__profile--details p{
+        font-size: 14px;
+    }
+    .details__card--container{
+        flex-wrap: wrap;
+    }
+    .profile__card{
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .credit__card{
+        width: 100%;
+        margin: 0;
+    }
+    .input__fields--container{
+        flex-wrap: wrap;
+    }
+    .mail__input{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header{
+        padding: 15px;
+    }
+    .inner__card--container{
+        flex-wrap: wrap;
+    }
+    .credit__card--one,
+    .credit__card--two,
+    .credit__card--three{
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+    .credit__card--one h4,
+    .credit__card--two h4,
+    .credit__card--three h4{
+        font-size: 14px;
+    }
+    .credit__card--one p,
+    .credit__card--two p,
+    .credit__card--three p{
+        font-size: 14px;
+    }
+    .credit__card h3{
+        top: 30px;
+        font-size: 14px;
+    }
+    .notification__tab--container{
+        padding: 30px;
+        width: 100%;
+    }
+    .notification__text{
+        font-size: 14px;
+        margin-left: 10px;
+        width: 75%;
+    }
+    .header__profile--balance p{
+        font-size: 14px;
+    }
+    .header__profile--balance span{
+        font-size: 14px;
+    }
+    .header__profile--details{
+        width: 160px;
+    }
+    .profile__menu--container{
+        width: 200px;
+        right: 14px;
+    }
+    .profile__menu--container li{
+        font-size: 12px;
+    }
+    .log__out--menu{
+        font-size: 12px;
+    }
+    .log__out--menu{
+        padding: 10px 14px;
+    }
+    .update__nav--items{
+        margin-left: 0;
+        flex-flow: column;
+        align-items: center;
+    }
+    .update__each--nav{
+        margin: 15px 0;
+    }
+    .update__each--nav:not(:last-child){
+        margin-right: 0;
+    }
+    .mail__input p{
+        margin-top: 15px;
     }
 }
