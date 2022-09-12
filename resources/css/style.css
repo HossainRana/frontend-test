@@ -137,6 +137,8 @@ header{
 }
 .left__menu--items{
     margin-top: 49px;
+    height: calc(100vh - 150px);
+    overflow-y: scroll;
 }
 .each__menu--item{
     display: flex;
