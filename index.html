@@ -219,7 +219,7 @@
                             <input type="checkbox" name="verification" id="export">
                             <span class="slider round slider-1-1"></span>
                         </label>
-                        <span class="notification__text">Notify me when list export completes</span>
+                        <span class="notification__text not__checked">Notify me when list export completes</span>
                     </li>
                     <li class="notification__each--item">
                         <label class="switch" for="result">
@@ -228,14 +228,27 @@
                         </label>
                         <span class="notification__text">Notify me when list verification result is about to expire</span>
                     </li>
+                    <hr class="custom__hr--notification">
                     <li class="notification__each--item">
                         <label class="switch" for="email">
                             <input type="checkbox" name="verification" id="email" checked>
                             <span class="slider round slider-1-1"></span>
                         </label>
-                        <span class="notification__text">Receive Low Credits Email</span>
+                        <label class="notification__text">Receive Low Credits Email</label>
                     </li>
                 </ul>
+                <div class="input__fields--container">
+                    <div class="mail__input">
+                        <p>Send Email to <span>*</span></p>
+                        <input type="text" placeholder="alexajui@gmail.com">
+                    </div>
+                    <div class="mail__input">
+                        <p>When credits are less than<span>*</span></p>
+                        <input type="text" value="50">
+                    </div>
+                </div>
+                <hr class="custom__hr--notification">
+                <button class="save__btn">Save Changes</button>
             </div>
         </div>
     </div>
