@@ -512,6 +512,22 @@ input:checked + .slider:before {
     padding: 14px 20px;
     outline: none;
 }
+.mail__input input::placeholder{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #BDBDBD;
+}
+.mail__input input{
+    ont-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #26262E;
+}
 .save__btn{
     padding: 10px 16px;
     width: 150px;
@@ -522,4 +538,9 @@ input:checked + .slider:before {
     color: #ffffff;
     outline: none;
     border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
 }
