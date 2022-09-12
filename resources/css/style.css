@@ -543,7 +543,7 @@ input:checked + .slider:before {
     color: #BDBDBD;
 }
 .mail__input input{
-    ont-family: 'Poppins';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
