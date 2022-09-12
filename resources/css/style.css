@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -69,6 +68,19 @@ header{
     color: #26262E;
     margin-right: 18px;
 }
+.menu__bar{
+    display: none;
+}
+.line-one,
+.line-two,
+.line-three{
+    width: 25px;
+    height: 2px;
+    margin-bottom: 5px;
+    background: #FF7901;
+    margin-left: 15px;
+}
+
 .menu__show{
     display: none;
 }
@@ -107,6 +119,11 @@ header{
     border-radius: 5px;
     padding: 10px 34px;
 }
+.content{
+    width: 100%;
+    height: 100%;
+    background: red;
+}
 .left__menu--container{
     width: 224px;
     height: 100%;
@@ -115,7 +132,7 @@ header{
     left: 0;
     background: #000000;
     text-align: center;
-    margin-top: 11px;
+    padding-top: 11px;
     z-index: 9999;
 }
 .left__menu--items{
@@ -205,11 +222,11 @@ header{
     background-color: #FCFBFF;
     height: 100%;
     width: calc(100% - 224px);
+    /*width: 100%;*/
     margin-left: 224px;
 }
 .details__card--container{
     display: flex;
-    flex-wrap: wrap;
 }
 .profile__card{
     min-width: calc(21% - 15px);
@@ -219,6 +236,7 @@ header{
     border-radius: 10px;
     margin-right: 15px;
     text-align: center;
+    padding: 0 14px;
 }
 .credit__card{
     min-width: calc(79% - 15px);
@@ -244,7 +262,6 @@ header{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
 .profile__card img{
@@ -286,7 +303,8 @@ header{
 .credit__card--two,
 .credit__card--three{
     width: calc(33% - 16px);
-    height: 154px;background: #FFFFFF;
+    min-height: 154px;
+    background: #FFFFFF;
     border: 1px solid #F2F2F4;
     border-radius: 10px;
     margin-top: 40px;
@@ -305,7 +323,7 @@ header{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 32px;
     color: #7D7D7E;
     margin-top: 20px;
@@ -316,7 +334,7 @@ header{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 32px;
     color: #BDBDBD;
     margin-top: 30px;
@@ -326,8 +344,9 @@ header{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 32px;
+    white-space: nowrap;
     color: #26262E;
     margin-top: 20px;
     margin-left: 20px;
@@ -336,7 +355,7 @@ header{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 32px;
     color: #26262E;
     margin-top: 30px;
@@ -344,6 +363,7 @@ header{
 }
 .profile__update--container{
     min-height: 659px;
+    height: 100%;
     width: 100%;
     background: #FFFFFF;
     border: 1px solid #F2F2F4;
@@ -392,10 +412,9 @@ header{
     border: none;
 }
 .notification__tab--container{
-    margin-left: 318px;
+    padding-left: 318px;
     margin-top: 54px;
-    max-width: 1000px;
-    width: 100%;
+    width: 84%;
 }
 .notification__list{
     list-style: none;
@@ -543,4 +562,28 @@ input:checked + .slider:before {
     font-weight: 500;
     font-size: 16px;
     line-height: 28px;
+}
+
+@media (max-width: 1024px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left__menu--container{
+        top: 90px;
+    }
+    .navmenu__show{
+        display: none;
+    }
+    .profile__details--container{
+        width: 100%;
+        margin-left: 0;
+    }
+    .menu__bar{
+        display: block;
+    }
+    .notification__tab--container{
+        padding-left: 100px;
+    }
 }
