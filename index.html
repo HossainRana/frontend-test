@@ -194,7 +194,53 @@
                 </div>
             </div>
         </div>
+
+        <!--Tab section-->
+
+        <div class="profile__update--container">
+            <ul class="update__nav--items">
+                <li class="update__each--nav">Update Profile</li>
+                <li class="update__each--nav">Change Password</li>
+                <li class="update__each--nav active__update--nav"> Email Notifications</li>
+                <li class="update__each--nav">Auto Recharge Settings</li>
+            </ul>
+            <hr class="custom__hr">
+            <div class="notification__tab--container">
+                <ul class="notification__list">
+                    <li class="notification__each--item">
+                        <label class="switch" for="verification">
+                            <input type="checkbox" name="verification" id="verification" checked>
+                            <span class="slider round slider-1-1"></span>
+                        </label>
+                        <span class="notification__text">Notify me when list verification completes</span>
+                    </li>
+                    <li class="notification__each--item">
+                        <label class="switch" for="export">
+                            <input type="checkbox" name="verification" id="export">
+                            <span class="slider round slider-1-1"></span>
+                        </label>
+                        <span class="notification__text">Notify me when list export completes</span>
+                    </li>
+                    <li class="notification__each--item">
+                        <label class="switch" for="result">
+                            <input type="checkbox" name="verification" id="result" checked>
+                            <span class="slider round slider-1-1"></span>
+                        </label>
+                        <span class="notification__text">Notify me when list verification result is about to expire</span>
+                    </li>
+                    <li class="notification__each--item">
+                        <label class="switch" for="email">
+                            <input type="checkbox" name="verification" id="email" checked>
+                            <span class="slider round slider-1-1"></span>
+                        </label>
+                        <span class="notification__text">Receive Low Credits Email</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+
 
     <script>
         var profileMenu = document.getElementById('profile');
