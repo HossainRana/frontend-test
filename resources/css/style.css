@@ -136,7 +136,7 @@ header{
     z-index: 9999;
 }
 .left__menu--items{
-    margin-top: 49px;
+    margin-top: 15px;
     height: calc(100vh - 150px);
     overflow-y: scroll;
 }
